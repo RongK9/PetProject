@@ -91,7 +91,8 @@ class Window(QMainWindow):
     def exit_app(self):
         QApplication.quit()
 
-app = QApplication([])
-window = Window()
-window.show()
-sys.exit(app.exec())
+if __name__ == '__main__':
+    app = QApplication([])
+    window = Window()
+    window.show()
+    sys.exit(app.exec())
