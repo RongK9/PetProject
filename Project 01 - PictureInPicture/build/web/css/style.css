@@ -1,0 +1,47 @@
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    /*viewport high*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+
+.button-container {
+    border: 1px solid #a64dff;
+    padding: 0px;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.7);
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    font-family: Barlow, sans-serif;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 2px 5px black;
+    background: linear-gradient(to top, #a64dff, #6600cc);
+    /* Màu neon tím */
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: inset 0 20px 4px -19px rgba(255, 255, 255, 0.4), 0 12px 12px 0 rgpa(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #a64dff, #6600cc);
+    /* Màu neon tím hover */
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 6px 6x 0 rgpa(0, 0, 0, 0.3);
+}
