@@ -17,7 +17,7 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(100, 100, 480, 350)
-        self.setWindowTitle("Kteam App")
+        self.setWindowTitle("Notepad App")
         self.setWindowIcon(QIcon('kteam.jpg'))
 
         menu_bar = self.menuBar()
