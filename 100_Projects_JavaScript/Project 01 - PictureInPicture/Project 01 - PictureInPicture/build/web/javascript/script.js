@@ -38,6 +38,3 @@ async function selectMediaStream() {
 button.addEventListener("click", selectMediaStream);
 // Attach click event listener to the Enter/Exit PIP mode button
 button2.addEventListener("click", togglePIPMode);
-
-
-function togglePIPMode ()
