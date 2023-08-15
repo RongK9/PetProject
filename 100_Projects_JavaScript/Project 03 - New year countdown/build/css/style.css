@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* uncomment if you want a website display in center */
+  /* height:100vh */
+  width: 800px;
+  height: 620px;
+  /* extension display */
+  justify-content: center;
+  font-family: "Segoe UI";
+  background-color: black;
+  overflow: hidden;
+}
+.image {
+  height: 300px;
+  width: 800px;
+  background-image: url("/build/assets/2024.svg");
+  background-size: 100%;
+  background-position: center;
+  z-index: 1;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.countdown {
+  margin: 10px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  background-color: black;
+  width: 100%;
+  color: white;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown div {
+  font-size: 2.5em;
+  font-weight: 500;
+  margin-top: 0px;
+  position: relative;
+  text-align: center;
+  width: 100px;
+}
+
+.countdown div::before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-size: 0.35em;
+  line-height: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  width: 100%;
+  height: 35px;
+}
+.countdown #day {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  font-size: 4em;
+}
+
+.countdown #day::before {
+  content: "Days";
+}
+.countdown #hour::before {
+  content: "Hours";
+}
+.countdown #minute::before {
+  content: "Minutes";
+}
+.countdown #second::before {
+  content: "Seconds";
+}

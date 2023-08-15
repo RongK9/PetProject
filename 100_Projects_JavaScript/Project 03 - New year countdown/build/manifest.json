@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Kteam New Year Countdown App",
+  "description": "Just a Countdown to new year app",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "assets/kteam.png"
+  }
+}
+
